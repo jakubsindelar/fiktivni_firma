@@ -14,8 +14,8 @@
     <meta name="author" content="Jakub Šindelář" />
   </head>
   <body>
-  <div id="layout">asdfasdfasd</div>
-  
+  <?php require ('functions.php');?>
+  <div id="layout"><?php layout();?></div>
   <div id="footer">Cloud, s. r. o.</div>
   </body>
     </html>
