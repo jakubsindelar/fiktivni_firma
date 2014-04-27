@@ -1,9 +1,6 @@
- htm, body
-            {
-            background:black;
+html,body  {
+            background-color:black;
             }
-#layout {
-    width:800px;
-    background-color: black;
-    color:white;
-    }
+#layout     {
+            
+            }
