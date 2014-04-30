@@ -11,14 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140426181252) do
+ActiveRecord::Schema.define(version: 20140430163431) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
     t.string   "surname"
     t.text     "address"
-    t.decimal  "social_security_number", precision: 10, scale: 0
+    t.decimal  "social_security_number"
     t.date     "birth_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contacts", force: true do |t|
+    t.string   "name"
+    t.string   "subject"
+    t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -27,7 +35,7 @@ ActiveRecord::Schema.define(version: 20140426181252) do
     t.string   "name"
     t.string   "surname"
     t.text     "address"
-    t.decimal  "social_security_number", precision: 10, scale: 0
+    t.decimal  "social_security_number"
     t.date     "birth_date"
     t.datetime "created_at"
     t.datetime "updated_at"
