@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'about' => 'home#about'
   get 'application' => 'home#application'
- 
+  get 'companies'  => 'home#companies'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
