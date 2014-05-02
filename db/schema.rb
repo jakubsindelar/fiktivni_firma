@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20140430163431) do
     t.string   "name"
     t.string   "surname"
     t.text     "address"
-    t.decimal  "social_security_number"
+    t.decimal  "social_security_number", precision: 10, scale: 0
     t.date     "birth_date"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20140430163431) do
     t.string   "name"
     t.string   "surname"
     t.text     "address"
-    t.decimal  "social_security_number"
+    t.decimal  "social_security_number", precision: 10, scale: 0
     t.date     "birth_date"
     t.datetime "created_at"
     t.datetime "updated_at"
