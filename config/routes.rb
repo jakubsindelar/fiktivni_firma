@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :employees
 
   get 'about' => 'home#about'
+  get 'application' => 'home#application'
  
 
 
