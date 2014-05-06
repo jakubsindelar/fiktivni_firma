@@ -11,3 +11,5 @@ footer		  {text-align: center;margin: 15px 0px 15px 0px;}
 /*Companies table*/
 table {max-width: 650px;}
 table>tbody>tr>td {}
+/*employes*/
+table.table-bordered {min-width: 800px;}
