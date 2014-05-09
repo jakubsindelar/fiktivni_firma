@@ -4,6 +4,7 @@ header>h1 { display: block; text-align: center;}
 header>ul { display: block; height: 10px;}
 header>ul>li { display: inline-block; padding: 0px 15px 0px 0px; } /*up,right,down,left*/
 footer		  {text-align: center;margin: 15px 0px 15px 0px;}
+.text_field {color:black;}
 
 /*contact form*/
 #new_contact_header {text-align: center;}
