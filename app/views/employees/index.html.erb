@@ -17,7 +17,7 @@
         <td class="col-md-2"><%= employee.name %></td>
         <td class="col-md-3"><%= employee.surname %></td>
         <td class="col-md-3"><%= employee.social_security_number %></td>
-        <td class="col-md-1"><%= employee.birth_date %></td>
+        <td class="col-md-1"><%= employee.birth_date.strftime("%d-%m-%Y") %></td>
         <td class="col-md-1"><%= link_to 'Zobrazit', employee %></td>
         <td class="col-md-1"><%= link_to 'Editovat', edit_employee_path(employee) %></td>
         <td><%= link_to 'Smazat', employee, method: :delete, data: { confirm: 'Opravdu chcete pokračovat?' } %></td>
