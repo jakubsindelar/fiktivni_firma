@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Jméno:</strong>
   <%= @employee.name %>
 </p>
 
 <p>
-  <strong>Surname:</strong>
+  <strong>Příjmení:</strong>
   <%= @employee.surname %>
 </p>
 
 <p>
-  <strong>Address:</strong>
-  <%= @employee.address %>
+  <strong>Adresa:</strong>
+   <%= @employee.street %>, <%= @employee.post_number.to_s[0..2] %> <%= @employee.post_number.to_s[3..4] %>  <%= @employee.city%>
 </p>
 
 <p>
-  <strong>Social security number:</strong>
+  <strong>Rodné číslo:</strong>
   <%= @employee.social_security_number %>
 </p>
 
 <p>
-  <strong>Birth date:</strong>
-  <%= @employee.birth_date %>
+  <strong>Datum narození:</strong>
+  <%= @employee.birth_date.strftime("%d-%m-%Y") %>
 </p>
 
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+<%= link_to 'Editovat', edit_employee_path(@employee) %> |
+<%= link_to 'Zpět', employees_path %>

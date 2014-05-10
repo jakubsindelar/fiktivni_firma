@@ -28,7 +28,7 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       if @employee.save
-        format.html { redirect_to @employee, notice: 'Employee was successfully created.' }
+        format.html { redirect_to @employee, notice: 'Nový zaměstnanec byl úzpěšně vytvořen.' }
         format.json { render :show, status: :created, location: @employee }
       else
         format.html { render :new }
@@ -69,6 +69,6 @@ class EmployeesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def employee_params
-      params.require(:employee).permit(:name, :surname, :address, :social_security_number, :birth_date)
+      params.require(:employee).permit(:name, :surname, :street, :social_security_number, :birth_date, :city, :post_number)
     end
 end
