@@ -37,10 +37,10 @@
   </div>
   <div class="field" style="color:black">
     <%= f.label :birth_date, 'Datum narození', :style => 'color:white' %><br>
-    <%= f.date_select :birth_date, :start_year => Date.current.year - 15 %>
+    <%= f.date_select :birth_date, :start_year => Date.current.year - 15, :end_year => 1930 %>
   </div>
   <br>
   <div class="actions">
     <%= f.submit 'Odeslat', :class => 'text_field' %>
-  </div>
+  </div>,
 <% end %>
