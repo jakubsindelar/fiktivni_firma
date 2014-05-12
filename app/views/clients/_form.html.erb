@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :name, 'Jméno' %><br>
+    <%= f.text_field :name, :class => 'text_field' %>
   </div>
   <div class="field">
-    <%= f.label :surname %><br>
-    <%= f.text_field :surname %>
+    <%= f.label :surname, 'Příjmení' %><br>
+    <%= f.text_field :surname, :class => 'text_field' %>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_area :address %>
+    <%= f.label :address, 'Adresa' %><br>
+    <%= f.text_area :address, :class => 'text_field' %>
   </div>
   <div class="field">
-    <%= f.label :social_security_number %><br>
-    <%= f.text_field :social_security_number %>
+    <%= f.label :social_security_number, 'Rodné číslo' %><br>
+    <%= f.text_field :social_security_number, :class => 'text_field' %>
   </div>
-  <div class="field">
-    <%= f.label :birth_date %><br>
+  <div class="field text_field">
+    <%= f.label :birth_date, 'Datum narození', :style => 'color:white;' %><br>
     <%= f.date_select :birth_date %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions text_field">
+    <%= f.submit'Odeslat' %>
   </div>
 <% end %>
