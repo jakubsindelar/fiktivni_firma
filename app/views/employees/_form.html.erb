@@ -37,7 +37,7 @@
   </div>
   <div class="field" style="color:black">
     <%= f.label :birth_date, 'Datum narození', :style => 'color:white' %><br>
-    <%= f.date_select :birth_date, :start_year => 1900 %>
+    <%= f.date_select :birth_date, :start_year => Date.current.year - 15 %>
   </div>
   <br>
   <div class="actions">
