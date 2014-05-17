@@ -11,6 +11,12 @@
 </p>
 
 <p>
+  <strong>Adresa:</strong>
+   <%= @client.street %>, <%= @client.post_number.to_s[0..2] %> <%= @client.post_number.to_s[3..4] %>  <%= @client.city%>
+</p>
+
+
+<p>
   <strong>Rodné číslo:</strong>
   <%= @client.social_security_number %>
 </p>
