@@ -12,34 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :name, "Jméno" %><br>
+    <%= f.text_field :name, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :surname %><br>
-    <%= f.text_field :surname %>
+    <%= f.label :surname, "Příjmení" %><br>
+    <%= f.text_field :surname, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :street %><br>
-    <%= f.text_field :street %>
+    <%= f.label :street, "Ulice" %><br>
+    <%= f.text_field :street, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
+    <%= f.label :city, "Město" %><br>
+    <%= f.text_field :city, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :post_number %><br>
-    <%= f.text_field :post_number %>
+    <%= f.label :post_number, "PSČ" %><br>
+    <%= f.text_field :post_number, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :social_security_number %><br>
-    <%= f.text_field :social_security_number %>
+    <%= f.label :social_security_number, "Rodné číslo" %><br>
+    <%= f.text_field :social_security_number, :class => "text_field" %>
   </div>
-  <div class="field">
-    <%= f.label :birth_date %><br>
+  <div class="field text_field">
+    <%= f.label :birth_date, "Datum narození", :class => "select_field" %><br>
     <%= f.date_select :birth_date %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Odeslat", :class => "buttons" %>
   </div>
 <% end %>
