@@ -18,3 +18,7 @@ table {max-width: 650px;}
 table>tbody>tr>td {}
 /*employes*/
 table.table-bordered {min-width: 800px;}
+/*buttons*/
+.buttons {color:black;}
+/*Select fields*/
+.select_field {color:white;}
