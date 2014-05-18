@@ -11,16 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140517160927) do
+ActiveRecord::Schema.define(version: 20140518153853) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
     t.string   "surname"
-    t.text     "address"
+    t.text     "street"
     t.decimal  "social_security_number", precision: 10, scale: 0
     t.date     "birth_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.decimal  "post_number",            precision: 10, scale: 0
   end
 
   create_table "contacts", force: true do |t|
