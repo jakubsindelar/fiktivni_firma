@@ -12,9 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :client_id %><br>
-    <%= f.number_field :client_id %>
-  </div>
+    <%=  f.select :client_id, options_for_select(Client.all.collect{|i| ["#{i.name} #{i.surname}", i.id]}, @service.client_id) %><br>
+      </div>
   <div class="field">
     <%= f.label :service %><br>
     <%= f.number_field :service %>
