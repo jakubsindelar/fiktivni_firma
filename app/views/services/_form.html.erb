@@ -16,7 +16,7 @@
       </div>
   <div class="field">
     <%= f.label :service %><br>
-    <%= f.number_field :service %>
+    <%=  f.select :id, options_for_select(Product.all.collect{|i| ["#{i.name}", i.id]}) %>
   </div>
   <div class="field">
     <%= f.label :status %><br>
