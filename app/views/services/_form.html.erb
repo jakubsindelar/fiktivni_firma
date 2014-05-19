@@ -11,22 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field text_field">
+    <%= f.label :client_id, "Klient", :class => "select_field" %></br>
     <%=  f.select :client_id, options_for_select(Client.all.collect{|i| ["#{i.name} #{i.surname}", i.id]}, @service.client_id) %><br>
       </div>
-  <div class="field">
-    <%= f.label :service %><br>
+  <div class="field text_field">
+    <%= f.label :service, "Služba", :class => "select_field" %><br>
     <%=  f.select :id, options_for_select(Product.all.collect{|i| ["#{i.name}", i.id]}) %>
   </div>
   <div class="field">
-    <%= f.label :status %><br>
-    <%= f.number_field :status %>
+    <%= f.label :status, "Stav" %><br>
+    <%= f.select :status, options_for_select(Service.all.collect{|i| ["Zaplaceno", i.status]}) %>
   </div>
   <div class="field">
-    <%= f.label :expirate_date %><br>
+    <%= f.label :expirate_date, "Expirace" %><br>
     <%= f.date_select :expirate_date %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Odeslat" %>
   </div>
 <% end %>
