@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :name, "Jméno" %><br>
+    <%= f.text_field :name, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :size %><br>
-    <%= f.number_field :size %>
+    <%= f.label :size, "Velikost" %><br>
+    <%= f.text_field :size, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :account %><br>
-    <%= f.number_field :account %>
+    <%= f.label :account, "Počet účtů" %><br>
+    <%= f.text_field :account, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :backup %><br>
-    <%= f.number_field :backup %>
+    <%= f.label :backup, "Zálohování" %><br>
+    <%= f.text_field :backup, :class => "text_field" %>
   </div>
   <div class="field">
-    <%= f.label :amount %><br>
-    <%= f.number_field :amount %>
+    <%= f.label :amount, "Cena" %><br>
+    <%= f.text_field :amount, :class => "text_field" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions buttons">
+    <%= f.submit "Odeslat" %>
   </div>
 <% end %>
