@@ -1,26 +1,26 @@
 <h1>Listing services</h1>
 
-<table>
+<table class="table-bordered">
   <thead>
     <tr>
-      <th>Client</th>
-      <th>Service</th>
-      <th>Status</th>
-      <th>Expirate date</th>
-      <th colspan="3"></th>
+      <th class="col-md-2">Client</th>
+      <th class="col-md-2">Service</th>
+      <th class="col-md-1">Status</th>
+      <th class="col-md-2">Expirate date</th>
+      <th class="col-md-2" colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @services.each do |service| %>
       <tr>
-        <td><%= service.client_id %></td>
-        <td><%= service.service %></td>
-        <td><%= service.status %></td>
-        <td><%= service.expirate_date %></td>
-        <td><%= link_to 'Show', service %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="col-md-2"><%= service.client_id %></td>
+        <td class="col-md-2"><%= service.service %></td>
+        <td class="col-md-1"><%= service.status %></td>
+        <td class="col-md-3"><%= service.expirate_date %></td>
+        <td class="col-md-1"><%= link_to 'Show', service %></td>
+        <td class="col-md-1"><%= link_to 'Edit', edit_service_path(service) %></td>
+        <td class="col-md-1"><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
