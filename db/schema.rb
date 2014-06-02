@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20140518180959) do
     t.string   "name"
     t.string   "surname"
     t.text     "street"
-    t.decimal  "social_security_number", precision: 10, scale: 0
+    t.decimal  "social_security_number"
     t.date     "birth_date"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "city"
-    t.decimal  "post_number",            precision: 10, scale: 0
+    t.decimal  "post_number"
   end
 
   create_table "contacts", force: true do |t|
@@ -37,12 +37,12 @@ ActiveRecord::Schema.define(version: 20140518180959) do
     t.string   "name"
     t.string   "surname"
     t.text     "street"
-    t.decimal  "social_security_number", precision: 10, scale: 0
+    t.decimal  "social_security_number"
     t.date     "birth_date"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "city"
-    t.decimal  "post_number",            precision: 10, scale: 0
+    t.decimal  "post_number"
   end
 
   create_table "products", force: true do |t|
