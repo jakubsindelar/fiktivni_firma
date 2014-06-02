@@ -30,7 +30,8 @@
 <%= link_to 'Zpět', clients_path %>
 
 <div>
+<h2>Produkty</h2>
 <% Service.where(client_id: @client.id).each do |service| %>
-  <%= service.id %>
+  <%= Product.where(id: service.service).name %>
 <% end %>
 </div>
