@@ -39,4 +39,5 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem "execjs"
 gem "therubyracer"
-gem 'twitter-bootstrap-rails'
+gem 'font-awesome-sass'
+gem 'bootstrap-sass', '~> 3.1.1'
