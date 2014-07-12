@@ -40,5 +40,14 @@
   <%= @customer.note %>
 </p>
 
+<p>
+  <strong>Orders:</strong>
+  <ul>
+  <% @customer.orders.each do |order| %>
+    <li><%= link_to order.id, order %></li>
+  <% end %>
+  </ul>
+</p>
+
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 <%= link_to 'Back', customers_path %>
