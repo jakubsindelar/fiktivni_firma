@@ -1,38 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--Hlavička HTML-->
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-    Cloud, s. r. o. - Firemní web a databáse
-    </title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=9" />
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="description" content="Firemní databáse">
-    <meta name="author" content="Jakub Šindelář" />
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
+<head>
+  <title>FiktivniFirma</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
 <body>
-    <div class="container">
-        <header class="row">
-            <h1>
-            Cloud, s. r. o., WEB a administrační systém
-            </h1>
-        </header>
-        <div class="row">
-        <div class="col-md-2">
-          <%=  render 'layouts/sidebar' %>
-             </div>
-            <div class="col-md-10">
-        <%= yield %>
-        </div>
-        </div>
-        <footer class="row"><%= render 'layouts/footer' %></footer>
-    </div>
+
+<%= yield %>
+
 </body>
 </html>
