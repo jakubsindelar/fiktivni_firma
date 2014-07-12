@@ -3,4 +3,10 @@
  *= require bootstrap
  *= require_self
  */
-html, body {background-color:black; }
+html,body  { background-color: black; color: white; font-size: 12pt;}
+h1,h2,h3,h4,h5,h6 {color: orange;font-size: 16px}
+header>h1 { display: block; text-align: center;}
+header>ul { display: block; height: 10px;}
+header>ul>li { display: inline-block; padding: 0px 15px 0px 0px; } /*up,right,down,left*/
+footer		{ text-align: center; margin: 15px auto; position: absolute; bottom: 5px; }
+.text_field {color:black;}
