@@ -1,54 +1,55 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Companny:</strong>
-  <%= @customer.companny %>
-</p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Firma:</strong>
+  <%= @customer.companny %>
+</p>
+<h4>Kontaktní osoba</h4>
+<p>
+  <strong>Jméno:</strong>
   <%= @customer.name %>
 </p>
 
 <p>
-  <strong>Surname:</strong>
+  <strong>Příjmení:</strong>
   <%= @customer.surname %>
 </p>
 
 <p>
-  <strong>Address street:</strong>
+  <strong>Ulice:</strong>
   <%= @customer.address_street %>
 </p>
 
 <p>
-  <strong>Address city:</strong>
+  <strong>Město:</strong>
   <%= @customer.address_city %>
 </p>
 
 <p>
-  <strong>Address zipcode:</strong>
+  <strong>PSČ:</strong>
   <%= @customer.address_zipcode %>
 </p>
 
 <p>
-  <strong>Ic:</strong>
+  <strong>IČ:</strong>
   <%= @customer.ic %>
 </p>
 
 <p>
-  <strong>Dic:</strong>
+  <strong>DIČ:</strong>
   <%= @customer.dic %>
 </p>
 
 <p>
-  <strong>Contact:</strong>
+  <strong>Kontakt:</strong>
   <%= @customer.contact %>
 </p>
 
 <p>
-  <strong>Note:</strong>
+  <strong>Poznámka:</strong>
   <%= @customer.note %>
 </p>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<%= link_to 'Upravit', edit_customer_path(@customer) %> |
+<%= link_to 'Zpět', customers_path %>

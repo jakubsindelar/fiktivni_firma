@@ -12,46 +12,47 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :companny %><br>
+    <%= f.label :companny, 'Firma' %><br>
     <%= f.text_field :companny %>
   </div>
+  <h4>Kontaktní osoba</h4>
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, 'Jméno' %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :surname %><br>
+    <%= f.label :surname, 'Příjmení' %><br>
     <%= f.text_field :surname %>
   </div>
   <div class="field">
-    <%= f.label :address_street %><br>
+    <%= f.label :address_street, 'Ulice' %><br>
     <%= f.text_field :address_street %>
   </div>
   <div class="field">
-    <%= f.label :address_city %><br>
+    <%= f.label :address_city, 'Město' %><br>
     <%= f.text_field :address_city %>
   </div>
   <div class="field">
-    <%= f.label :address_zipcode %><br>
+    <%= f.label :address_zipcode, 'PSč' %><br>
     <%= f.text_field :address_zipcode %>
   </div>
   <div class="field">
-    <%= f.label :ic %><br>
+    <%= f.label :ic, 'IČ' %><br>
     <%= f.text_field :ic %>
   </div>
   <div class="field">
-    <%= f.label :dic %><br>
+    <%= f.label :dic, 'DIČ' %><br>
     <%= f.text_field :dic %>
   </div>
   <div class="field">
-    <%= f.label :contact %><br>
+    <%= f.label :contact, 'Kontakt' %><br>
     <%= f.text_field :contact %>
   </div>
   <div class="field">
-    <%= f.label :note %><br>
+    <%= f.label :note, 'Poznámka' %><br>
     <%= f.text_field :note %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Odeslat' %>
   </div>
 <% end %>
