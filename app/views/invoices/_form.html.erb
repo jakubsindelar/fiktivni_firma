@@ -12,38 +12,38 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user_id %><br>
+    <%= f.label :user_id, 'Zákazník' %><br>
     <%= f.number_field :user_id %>
   </div>
   <div class="field">
-    <%= f.label :date_created %><br>
+    <%= f.label :date_created, 'Datum vytvoření' %><br>
     <%= f.date_select :date_created %>
   </div>
   <div class="field">
-    <%= f.label :date %><br>
+    <%= f.label :date, 'Datum' %><br>
     <%= f.date_select :date %>
   </div>
   <div class="field">
-    <%= f.label :payment_date %><br>
+    <%= f.label :payment_date, 'Datum pladby' %><br>
     <%= f.date_select :payment_date %>
   </div>
   <div class="field">
-    <%= f.label :payment_type %><br>
+    <%= f.label :payment_type, 'Typ platby' %><br>
     <%= f.text_field :payment_type %>
   </div>
   <div class="field">
-    <%= f.label :amount %><br>
+    <%= f.label :amount, 'Částka' %><br>
     <%= f.number_field :amount %>
   </div>
   <div class="field">
-    <%= f.label :items %><br>
+    <%= f.label :items, 'Položky' %><br>
     <%= f.text_field :items %>
   </div>
   <div class="field">
-    <%= f.label :note %><br>
+    <%= f.label :note, 'Poznámka' %><br>
     <%= f.text_field :note %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Odeslat' %>
   </div>
 <% end %>
